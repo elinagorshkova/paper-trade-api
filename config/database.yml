@@ -1,4 +1,4 @@
-<% project_name = 'paper_trade_api' %>
+<% project_name = 'paper-trade-api' %>
 
 default: &default
   adapter: postgresql
