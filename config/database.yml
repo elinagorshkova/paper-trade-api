@@ -1,0 +1,14 @@
+<% project_name = 'paper_trade_api' %>
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 5 } %>
+
+development:
+  <<: *default
+  database: <%= paper_tarde_api %>_development
+
+test:
+  <<: *default
+  database: <%= paper_tarde_api %>_test
