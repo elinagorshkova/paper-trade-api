@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :positions
   resources :portfolios
   # RESTful routes
   resources :examples, except: %i[new edit]
