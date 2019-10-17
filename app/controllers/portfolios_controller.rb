@@ -3,7 +3,7 @@ class PortfoliosController < OpenReadController
 
   # GET /portfolios
   def index
-    @portfolios = Portfolio.all
+    @portfolios = Portfolio.where(:user_id => current_user.id)
 
     render json: @portfolios
   end
