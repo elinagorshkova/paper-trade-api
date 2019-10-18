@@ -46,6 +46,6 @@ class PositionsController < OpenReadController
 
     # Only allow a trusted parameter "white list" through.
     def position_params
-      params.require(:position).permit(:name, :ticker, :volume, :price, :portfolio_id)
+      params.require(:position).permit(:name, :ticker, :volume, :price, :portfolio_id, :side)
     end
 end
